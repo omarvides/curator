@@ -12,8 +12,8 @@ logger = logging.getLogger('curator')
 logger.addHandler(logging.StreamHandler())
 logger.setLevel(logging.INFO)
 
-host = os.environ['AWS_HOST']
-region = os.environ['AWS_HOST']
+host = os.environ['AWS_ES_HOST_URL']
+region = os.environ['AWS_REGION']
 service = 'es'
 credentials = boto3.Session().get_credentials()
 awsauth = AWS4Auth(credentials.access_key, credentials.secret_key, region, service, session_token=credentials.token)
