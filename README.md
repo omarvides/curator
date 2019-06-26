@@ -22,6 +22,10 @@ Where `AWS_ES_HOST_URL` is the URL provided by AWS for your elasticsearch cluste
 $ pip install -r requirements.txt
 ```
 
+### Using this repository
+
+**TODO**
+
 ## Development
 To freeze the requirements of this repository 
 
